@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <title>GitHub Pull Request Checker</title>
+    <style type="text/css">
+      body {
+        font-family: "Trebuchet MS", sans-serif;
+      }
+      h1, p {
+        text-align: center;
+      }
+      #pull-requests {
+         border: 1px solid #DECD71;
+         margin: 0 auto;
+         width: 50%;
+      }
+      .pull {
+        background-color: #FFEB82;
+        border-bottom: 1px solid #DECD71;
+        color: #333;
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+      }
+      .pull:nth-child(even) {
+        background-color: #FFEFB0;
+      }
+      .pull:last-child {
+        border-bottom: none;
+      }
+      .pull-closed {
+        text-decoration: line-through;
+      }
+      .label {
+        border: 1px solid #555;
+        color: #555;
+        display: inline-block;
+        font-size: 0.7em;
+        float: right;
+        padding: 0.25em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <h1>Pull Requests</h1>
+      <p>A list of invalid pull requests.</p>
+
+      <div id="pull-requests">
+
+      </div><!-- pull-requests -->
+    </div><!-- main -->
+
+    <script src="js/syncano.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
